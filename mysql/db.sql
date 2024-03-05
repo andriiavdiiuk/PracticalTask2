@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS grades
     student_id INT NOT NULL,
     subject_id INT NOT NULL,
     grade INT,
-    PRIMARY KEY (grade_id,student_id, subject_id),
+    PRIMARY KEY (grade_id),
     CONSTRAINT
         FOREIGN KEY (student_id) REFERENCES students(student_id)
             ON DELETE CASCADE,
